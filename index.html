@@ -1,0 +1,89 @@
+<!DOCTYPE html> 
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shift Creation</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body onload="init();">
+  <div class="heading">
+    <span id="prev">&laquo;</span>
+    <h3 id="title" class="thisMonth"></h3>
+    <span id="next">&raquo;</span>
+  </div>
+  <!--<button id="run" class="btn">RUN</button>   onloadでinit()を呼んでいるので用途不明なrunボタンは不要。コメントアウト-->
+  <div class="container" id="_container">
+    <table class="table1">  
+      <thead>
+        <tr id="calender">
+          <th rowspan="2">root</th>
+          <th rowspan="2">name</th>
+        </tr>
+        <tr id="week"></tr>
+      </thead>
+      <tbody id="tbody1">   
+        <tr id="row0">
+          <th>2009</th>
+          <th>yu-ki</th>
+        </tr>
+        <tr id="row1">
+          <th>2010</th>
+          <th>aya</th>
+        </tr>
+        <tr id="row2">
+          <th>2011</th>
+          <th>rino</th>
+        </tr>
+        <tr id="row3">
+          <th>2012</th>
+          <th>den</th>
+        </tr>
+        <tr id="row4">
+          <th>2014</th>
+          <th>petie</th>
+        </tr>
+        <tr id="row5">
+          <th>STR</th>
+          <th>tanaka</th>
+        </tr>
+        <tr id="row6">
+          <th>STR</th>
+          <th>yoshida</th>
+        </tr>
+      </tbody>
+    </table>
+    <table class="table2">
+      <thead>
+        <tr>
+          <th height="60">P.H</th>
+        </tr>
+      </thead>
+      <tbody id="tbody2">
+        <tr id="_row0">
+          <td id="phValue0">0</td>
+        </tr>
+        <tr id="_row1">
+          <td id="phValue1">0</td>
+        </tr>
+        <tr id="_row2">
+          <td id="phValue2">0</td>
+        </tr>
+        <tr id="_row3">
+          <td id="phValue3">0</td>
+        </tr>
+        <tr id="_row4">
+          <td id="phValue4">0</td>
+        </tr>
+        <tr id="_row5">
+          <td id="phValue5">0</td>
+        </tr>
+        <tr id="_row6">
+          <td id="phValue6">0</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

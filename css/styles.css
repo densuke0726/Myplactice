@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.table1 {
+  width: 80%;
+}
+
+.thisMonth  {
+text-align: center;
+margin: 40px auto;
+}
+
+.sat {
+  background-color: skyblue;
+}
+
+.sun {
+  background-color: tomato;
+}
+
+#prev,
+#next {
+  display: block;
+  margin: auto;
+  padding: 10px; /* 押しづらいのでpaddingで押せる領域を広げてやる */
+  border: 1px solid black;
+  cursor: pointer;
+} 
+
+/* 押せる範囲に入ったら背景色を変えて教えてやると使い勝手が上がる */
+#prev:hover,
+#next:hover {
+  background-color: yellow;
+}
+
+.heading {
+  display: flex;
+}
+
+.header {
+  font-weight: bold;
+}
+
+.btn {
+  margin-left: 150px;
+  margin-bottom: 20px;
+}
+
+table,
+th,
+tr,
+td {
+  border-collapse: collapse;
+  border: 2px solid #333;
+}
+
+td {
+  width: 53px;
+  height: 28px;
+  text-align: center;
+}
+
+td:not([id^="phValue"]):hover { /* 要素を選択ホバーしていることを明示して日付の押し間違いを防ぐ */
+  background-color: yellow;
+}
+
+#run {
+  cursor: pointer;
+}
+
+#run:hover {
+  opacity: 0.5;
+}
+
+tbody tr td {
+  cursor: pointer;
+  user-select: none;
+}
